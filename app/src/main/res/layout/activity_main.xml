@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/ssidEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="SSID"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <RadioGroup
+        android:id="@+id/frequencyRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio24GHz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.4 GHz" />
+
+        <RadioButton
+            android:id="@+id/radio5GHz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 GHz" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/maxConnectionsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Max Connections (1-5)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/startHotspotButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Hotspot" />
+
+    <Button
+        android:id="@+id/stopHotspotButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Hotspot" />
+
+</LinearLayout>
